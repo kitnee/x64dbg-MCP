@@ -1,10 +1,28 @@
 # x64dbg MCP
 
-Use x64dbg from Claude Code or Codex through MCP tools. The client plugin downloads the version-pinned prebuilt MCP server from its GitHub Release on first launch; Rust is only needed when building from source.
+Use x64dbg from Antigravity CLI, Claude Code, or Codex through MCP tools. The client plugin downloads the version-pinned prebuilt MCP server from its GitHub Release on first launch; Rust is only needed when building from source.
 
 ## Install
 
-Requires Windows x64 and x64dbg (x64 or x32), plus Claude Code or Codex. Rust is not required.
+Requires Windows x64 and x64dbg (x64 or x32), plus Antigravity CLI, Claude Code, or Codex. Rust is not required.
+
+For Antigravity CLI (plugin):
+
+```powershell
+agy plugin install https://github.com/kitnee/x64dbg-MCP
+```
+
+Or configure `~/.gemini/config/mcp_config.json` manually with a local build:
+
+```json
+{
+  "mcpServers": {
+    "x64dbg": {
+      "command": "D:\\tools\\x64dbg-MCP\\target\\x86_64-pc-windows-gnu\\release\\x64dbg-mcp.exe"
+    }
+  }
+}
+```
 
 For Claude Code:
 
