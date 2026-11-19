@@ -1,0 +1,9 @@
+{
+  "name": "x64dbg-mcp",
+  "description": "Connect Antigravity CLI to a running x64dbg session via MCP.",
+  "version": "0.2.0",
+  "author": {
+    "name": "zxcvbbq"
+  },
+  "repository": "https://github.com/zxcvbbq/x64dbg-MCP"
+}
